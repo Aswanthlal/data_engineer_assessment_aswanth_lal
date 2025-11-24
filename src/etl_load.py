@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# DB config via env (set these from docker-compose)
+# DB config via env 
 DB_HOST = os.getenv("DB_HOST", "127.0.0.1")
 DB_PORT = int(os.getenv("DB_PORT", 3306))
 DB_NAME = os.getenv("DB_NAME", "home_db")
@@ -154,7 +154,7 @@ class PropertyModel(BaseModel):
 
     @validator('SQFT_Basement','SQFT_MU','Year_Built','Bed','Bath','SQFT_Total','Neighborhood_Rating', pre=True)
     def int_conv(cls, v):
-        # parse strings like "5649 sqft"
+        # parse strings eg: "5649 sqft"
         if v is None:
             return None
         return to_int_if_possible(v)
@@ -392,7 +392,7 @@ def main():
         prepare_db_and_tables(conn)
         inserted = 0
         for rec in data:
-            # validate / normalize
+            # validate | normalize
             try:
                 pm = PropertyModel(**rec)
             except Exception as e:
@@ -406,7 +406,7 @@ def main():
             row = cur.fetchone()
             if row:
                 property_id = row[0]
-                # optionally skip or update; here --- skip insert to avoid duplicates
+                # optionally skip or update
                 print(f"Skipping duplicate property {pm.Property_Title}")
                 cur.close()
                 continue
