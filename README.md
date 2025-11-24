@@ -254,7 +254,7 @@ This ensures that the database is accessible and tables are created correctly.
 SELECT COUNT(*) FROM property;
 SELECT COUNT(*) FROM leads;
 SELECT COUNT(*) FROM valuation;
-SELECT COUNT(*) FROM HOA;
+SELECT COUNT(*) FROM hoa;
 SELECT COUNT(*) FROM rehab;
 ```
 
@@ -270,7 +270,7 @@ LIMIT 10;
 -- HOA
 SELECT p.property_title, h.hoa_amount, h.hoa_flag
 FROM property p
-JOIN HOA h ON p.id = h.property_id
+JOIN hoa h ON p.id = h.property_id
 LIMIT 10;
 
 -- Rehab
