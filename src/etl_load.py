@@ -13,7 +13,7 @@ load_dotenv()
 
 # DB config via env (set these from docker-compose)
 DB_HOST = os.getenv("DB_HOST", "127.0.0.1")
-DB_PORT = int(os.getenv("DB_PORT", 3307))
+DB_PORT = int(os.getenv("DB_PORT", 3306))
 DB_NAME = os.getenv("DB_NAME", "home_db")
 DB_USER = os.getenv("DB_USER", "db_user")
 DB_PASSWORD = os.getenv("DB_PASSWORD", "6equj5_db_user")
