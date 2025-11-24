@@ -109,7 +109,7 @@ This exercise evaluates core data-engineering skills:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/100x-Home-LLC/data_engineer_assessment.git data_engineer_assessment_aswanth_lal
+git clone https://github.com/Aswanthlal/data_engineer_assessment_aswanth_lal.git
 cd data_engineer_assessment_aswanth_lal
 ```
 
