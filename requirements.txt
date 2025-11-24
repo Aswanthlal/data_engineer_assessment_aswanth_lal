@@ -1,0 +1,5 @@
+pydantic==1.10.12        # input validation and parsing of JSON -> models
+mysql-connector-python==8.1.0  # DB driver for MySQL (pure python, official connector)
+python-dotenv==1.0.0     # load DB creds from .env during development/run
+pandas==2.2.2            # for larger data file handling / fast parsing (optional)
+tqdm==4.65.0             # progress bar 
