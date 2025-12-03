@@ -227,7 +227,9 @@ python src/etl_load.py
 Use the following commands to connect and query the database:
 
 # Connect to MySQL
+```bash
 mysql -h 127.0.0.1 -P 3306 -u db_user -p
+```
 # Enter the password from credentials
 
 
