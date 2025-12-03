@@ -234,16 +234,20 @@ mysql -h 127.0.0.1 -P 3306 -u db_user -p
 
 
 # Show databases
+```bash
 SHOW DATABASES;
+```
 
 
 # Select your database
+```bash
 USE home_db;
-
+```
 
 # Show tables
+```bash
 SHOW TABLES;
-
+```
 This ensures that the database is accessible and tables are created correctly.
 
 
