@@ -108,7 +108,15 @@ This exercise evaluates core data-engineering skills:
 
 > All dependencies are listed in `requirements.txt`.
 
-### 1. Clone the Repository
+### Execution Order
+1. Start MySQL using Docker
+2. Install Python dependencies
+3. Run ETL script
+4. Verify loaded data
+* The ETL script is designed to be re-runnable without duplicating records.
+
+
+#### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Aswanthlal/data_engineer_assessment_aswanth_lal.git
@@ -116,7 +124,7 @@ cd data_engineer_assessment_aswanth_lal
 ```
 
 
-### 2. Python Environment
+#### 2. Python Environment
 
 ```bash
 python -m venv venv
@@ -130,7 +138,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Start MySQL via Docker
+#### 3. Start MySQL via Docker
 
 ```bash
 docker-compose -f docker-compose.initial.yml up --build -d
