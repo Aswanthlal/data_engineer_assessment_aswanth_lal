@@ -100,9 +100,11 @@ This exercise evaluates core data-engineering skills:
 
 ### Allowed Technologies
 
-* Python ≥ 3.8 (all ETL/data-processing code)
-* MySQL 8 (target relational database)
+* Python ≥ 3.8 (all ETL / data-processing code)
+* Docker & Docker Compose (required to run MySQL via container)
+* MySQL 8 (target relational database, provided via Docker)
 * Pydantic (data validation)
+
 
 > All dependencies are listed in `requirements.txt`.
 
